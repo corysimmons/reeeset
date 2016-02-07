@@ -1,0 +1,37 @@
+{
+  "name": "reeeset",
+  "version": "0.0.1",
+  "description": "A slightly opinionated CSS reset.",
+  "main": "dist/reeeset.min.css",
+  "scripts": {
+    "build": "npm-run-all build:**",
+    "build:clean": "trash ./dist; trash ./bower_components",
+    "build:mkdir": "mkdir ./dist",
+    "build:bower": "bower cache clean; bower update; bower install",
+    "build:csscomb": "csscomb --config ./.csscomb.json ./src/reeeset.css",
+    "build:cleancss": "cleancss --compatibility ie8 --source-map --keep-line-breaks ./src/reeeset.css --output ./dist/reeeset.css",
+    "build:cssnano": "cssnano ./dist/reeeset.css ./dist/reeeset.min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/corysimmons/reeeset.git"
+  },
+  "keywords": [
+    "css",
+    "reset"
+  ],
+  "author": "Cory Simmons",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/corysimmons/reeeset/issues"
+  },
+  "homepage": "https://github.com/corysimmons/reeeset",
+  "devDependencies": {
+    "bower": "^1.7.7",
+    "clean-css": "^3.4.9",
+    "csscomb": "^3.1.8",
+    "cssnano-cli": "^1.0.3",
+    "npm-run-all": "^1.5.1",
+    "trash-cli": "^1.2.0"
+  }
+}

@@ -1,3 +1,13 @@
+# Created by https://www.gitignore.io/api/bower,node
+
+### Bower ###
+bower_components
+.bower-cache
+.bower-registry
+.bower-tmp
+
+
+### Node ###
 # Logs
 logs
 *.log

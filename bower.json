@@ -1,0 +1,25 @@
+{
+  "name": "reeeset",
+  "description": "A slightly opinionated CSS reset.",
+  "main": "dist/reeeset.min.css",
+  "authors": [
+    "Cory Simmons"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "reset"
+  ],
+  "homepage": "https://github.com/corysimmons/reeeset",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "normalize-css": "^3.0.3"
+  }
+}

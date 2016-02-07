@@ -9,8 +9,8 @@
     "build:mkdir": "mkdir ./dist",
     "build:bower": "bower cache clean; bower update; bower install",
     "build:csscomb": "csscomb --config ./.csscomb.json ./src/reeeset.css",
-    "build:cleancss": "cleancss --compatibility ie8 --source-map --keep-line-breaks ./src/reeeset.css --output ./dist/reeeset.css",
-    "build:cssnano": "cssnano ./dist/reeeset.css ./dist/reeeset.min.css"
+    "build:cleancss": "cleancss --compatibility ie8 --source-map --s1 --keep-line-breaks ./src/reeeset.css --output ./dist/reeeset.css",
+    "build:minify": "cleancss --compatibility ie8 --source-map --s1 ./src/reeeset.css --output ./dist/reeeset.min.css"
   },
   "repository": {
     "type": "git",
@@ -30,7 +30,6 @@
     "bower": "^1.7.7",
     "clean-css": "^3.4.9",
     "csscomb": "^3.1.8",
-    "cssnano-cli": "^1.0.3",
     "npm-run-all": "^1.5.1",
     "trash-cli": "^1.2.0"
   }

@@ -23,8 +23,9 @@ REEEEEEEEEEEEEE GET OUT NORMIE!!!!
 - Very basic typography
   - Beautiful [system fonts](https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide)
   - 1.5 `line-height`
-  - `margin-bottom: 1rem` on block elements
+  - `margin-bottom` on block elements
   - Generic heading sizes/line-height
+  - IE9+ sized in rems for [easy responsive typography](http://webdesign.tutsplus.com/tutorials/the-lazy-persons-guide-to-responsive-typography--cms-22822)
 
 ### Installation
 
@@ -39,7 +40,6 @@ Put `@import 'reeeset.min.css';` at the top of the first stylesheet you're loadi
 
 ### Browser Support
 - IE9+
-- IE8+ except typography font-sizes/margins are [currently ignored](https://github.com/jakubpawlowicz/clean-css/issues/730) to make use of rems. rems make [responsive typography](http://webdesign.tutsplus.com/tutorials/the-lazy-persons-guide-to-responsive-typography--cms-22822) a breeze. I'll probably add px fallbacks in the future, but I can't automate the build process right now.
 
 ### Contribute
 If you notice I'm doing anything insanely wrong, please make an issue so we can discuss it and I can fix it. Resetting margins/padding/border-box isn't up for debate.

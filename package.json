@@ -1,6 +1,6 @@
 {
   "name": "reeeset",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A slightly opinionated CSS reset.",
   "main": "dist/reeeset.min.css",
   "scripts": {
@@ -8,9 +8,10 @@
     "build:clean": "trash ./dist; trash ./bower_components",
     "build:mkdir": "mkdir ./dist",
     "build:bower": "bower cache clean; bower update; bower install",
-    "build:csscomb": "csscomb --config ./.csscomb.json ./src/reeeset.css",
-    "build:cleancss": "cleancss --compatibility ie8 --source-map --s1 --keep-line-breaks ./src/reeeset.css --output ./dist/reeeset.css",
-    "build:minify": "cleancss --compatibility ie8 --source-map --s1 ./src/reeeset.css --output ./dist/reeeset.min.css"
+    "build:csscomb": "csscomb --config ./.csscomb.json ./bower_components/normalize-css/normalize.css; csscomb --config ./.csscomb.json ./src/reeeset.css",
+    "build:concat": "concat-files ./version.txt ./bower_components/normalize-css/normalize.css ./src/reeeset.css --output ./dist/reeeset.css",
+    "build:cleancss": "cleancss --compatibility ie8 --source-map --s1 ./dist/reeeset.css --output ./dist/reeeset.min.css",
+    "build:replace": "replace 'dist/reeeset.css' 'reeeset.css' ./dist/reeeset.min.css.map"
   },
   "repository": {
     "type": "git",
@@ -29,8 +30,10 @@
   "devDependencies": {
     "bower": "^1.7.7",
     "clean-css": "^3.4.9",
+    "concat-file-array-cli": "0.0.2",
     "csscomb": "^3.1.8",
     "npm-run-all": "^1.5.1",
+    "replace": "^0.3.0",
     "trash-cli": "^1.2.0"
   }
 }

@@ -39,7 +39,7 @@ REEEEEEEEEEEEEE GET OUT NORMIE!!!!
 Put `@import 'reeeset.min.css';` at the top of the first stylesheet you're loading (the first one to appear in `<head>`). If you want sourcemap support just dump reeeset.min.css.map into the same directory.
 
 ### Browser Support
-- IE9+
+- IE8+
 
 ### Contribute
 If you notice I'm doing anything insanely wrong, please make an issue so we can discuss it and I can fix it. Resetting margins/padding/border-box isn't up for debate.

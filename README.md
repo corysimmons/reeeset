@@ -15,7 +15,7 @@ REEEEEEEEEEEEEE GET OUT NORMIE!!!!
 ### Features
 - [Normalize.css](https://necolas.github.io/normalize.css)
 - `*` to remove margin, padding, and add [box-sizing: border-box](http://www.paulirish.com/2012/box-sizing-border-box-ftw)
-- Reset Normalize margins/padding (`<figure>` and `<fieldset>` only)
+- Reset Normalize margins/padding (`<h1>`, `<figure>`, and `<fieldset>` only)
 - Eliminate [page bounce](https://css-tricks.com/eliminate-jumps-in-horizontal-centering-by-forcing-a-scroll-bar) with `overflow-y: scroll`
 - Clearfix `<body>`
 - `max-width: 100%` typically overflowing elements to [make them responsive](http://unstoppablerobotninja.com/entry/fluid-images)

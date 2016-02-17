@@ -36,7 +36,7 @@ REEEEEEEEEEEEEE GET OUT NORMIE!!!!
 `npm install --save-dev reeeset`
 
 ### Usage
-Put `@import 'reeeset.min.css';` at the top of the first stylesheet you're loading (the first one to appear in `<head>`). If you want sourcemap support just dump reeeset.min.css.map into the same directory.
+Put `@import 'reeeset.min.css';` at the top of the first stylesheet you're loading (the first one to appear in `<head>`). If you want sourcemap support just dump reeeset.css and reeeset.min.css.map into the same directory.
 
 ### Browser Support
 - IE8+

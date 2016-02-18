@@ -1,14 +1,16 @@
 
 /*! reeeset.css */
 
+/* http://www.paulirish.com/2012/box-sizing-border-box-ftw */
 html {
-  box-sizing: border-box; /* http://www.paulirish.com/2012/box-sizing-border-box-ftw */
+  box-sizing: border-box;
 }
 
+/* https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice */
 *,
 :after,
 :before {
-  box-sizing: inherit; /* https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice */
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
 }

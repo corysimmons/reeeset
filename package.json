@@ -5,7 +5,7 @@
   "main": "dist/reeeset.min.css",
   "scripts": {
     "build": "npm-run-all build:**",
-    "build:clean": "trash ./dist; trash ./bower_components",
+    "build:clean": "rimraf ./dist; rimraf ./bower_components",
     "build:mkdir": "mkdir ./dist",
     "build:bower": "bower cache clean; bower update; bower install",
     "build:csscomb": "csscomb --config ./.csscomb.json ./bower_components/normalize-css/normalize.css; csscomb --config ./.csscomb.json ./src/reeeset.css",
@@ -34,6 +34,6 @@
     "csscomb": "^3.1.8",
     "npm-run-all": "^1.5.1",
     "replace": "^0.3.0",
-    "trash-cli": "^1.2.0"
+    "rimraf": "^2.5.4"
   }
 }

@@ -26,11 +26,6 @@ fieldset {
   padding: 0;
 }
 
-/* https://css-tricks.com/eliminate-jumps-in-horizontal-centering-by-forcing-a-scroll-bar */
-body {
-  overflow-y: scroll;
-}
-
 /* Clearfix body */
 body:after {
   display: table;

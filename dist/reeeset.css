@@ -1,4 +1,4 @@
-/*! reeeset.css 0.0.7 - https://github.com/corysimmons/reeeset */
+/*! reeeset.css 0.0.8 - https://github.com/corysimmons/reeeset */
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 
 /**
@@ -425,20 +425,23 @@ textarea {
 /*! reeeset.css */
 
 /* http://www.paulirish.com/2012/box-sizing-border-box-ftw */
+/* https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice */
 html {
   box-sizing: border-box;
 }
 
-/* https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice */
 *,
 :after,
 :before {
   box-sizing: inherit;
+}
+
+/* Reset Normalize margins/padding */
+* {
   margin: 0;
   padding: 0;
 }
 
-/* Reset Normalize margins/padding */
 h1,
 figure,
 fieldset {
@@ -447,14 +450,6 @@ fieldset {
 
 fieldset {
   padding: 0;
-}
-
-/* Clearfix body */
-body:after {
-  display: table;
-  clear: both;
-
-  content: '';
 }
 
 /* http://unstoppablerobotninja.com/entry/fluid-images */
@@ -475,16 +470,14 @@ table {
 
   text-align: center;
 
-  color: #fff;
-  background: #333;
-
-  line-height: 1.5;
+  color: white;
+  background: #333333;
 }
 
 .browserupgrade a {
   text-decoration: none;
 
-  color: #1e90ff;
+  color: dodgerblue;
 
   font-weight: bold;
 }
@@ -498,7 +491,7 @@ table {
 /* https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide */
 html {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  line-height: 1.5;
+  line-height: 1.666;
 }
 
 h1,
@@ -507,57 +500,43 @@ h3,
 h4,
 h5,
 h6 {
-  margin-bottom: 16px;
-  margin-bottom: 1rem;
-
-  line-height: 1.25;
+  line-height: 1.1;
 }
 
 h1 {
-  font-size: 36px;
   font-size: 2.25rem;
 }
 
 h2 {
-  font-size: 32px;
   font-size: 2rem;
 }
 
 h3 {
-  font-size: 28px;
   font-size: 1.75rem;
 }
 
 h4 {
-  font-size: 24px;
   font-size: 1.5rem;
 }
 
 h5 {
-  font-size: 20px;
   font-size: 1.25rem;
 }
 
 h6 {
-  font-size: 16px;
   font-size: 1rem;
 }
 
-p,
-blockquote,
-pre,
-address,
-dl,
-ol,
-ul,
-table {
-  margin-bottom: 16px;
-  margin-bottom: 1rem;
-}
-
-p:last-of-type {
-  margin-bottom: 0;
-}
+/*
+ * Implement the 'Lobotomized Owl' technique on content areas.
+ *
+ * Example:
+ *
+ * article * + * {
+ *   margin-top: 1rem;
+ * }
+ *
+**/
 
 /* Tweaks */
 table {

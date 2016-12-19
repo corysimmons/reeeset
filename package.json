@@ -1,6 +1,6 @@
 {
   "name": "reeeset",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "A slightly opinionated CSS reset.",
   "main": "dist/reeeset.min.css",
   "scripts": {
@@ -32,7 +32,7 @@
     "clean-css": "^3.4.9",
     "concat-file-array-cli": "0.0.2",
     "csscomb": "^3.1.8",
-    "npm-run-all": "^1.5.1",
+    "npm-run-all": "^3.1.2",
     "replace": "^0.3.0",
     "rimraf": "^2.5.4"
   }

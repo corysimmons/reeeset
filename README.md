@@ -5,6 +5,8 @@
 </p>
 
 ### Why?
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/corysimmons/reeeset.svg)](https://greenkeeper.io/)
 Normalize is made to make browsers consistent. This is cool, but in the real world margins, padding, box-sizing, are all really annoying things. The easiest way to deal with it is to simply reset them all.
 
 Sanitize.css does something similar and is fairly popular. I might assimilate Sanitize over Normalize in the future, but for now Normalize seems a bit more stable.

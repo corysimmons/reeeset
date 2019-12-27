@@ -29,7 +29,7 @@
   "homepage": "https://github.com/corysimmons/reeeset",
   "devDependencies": {
     "bower": "^1.7.7",
-    "clean-css": "^3.4.9",
+    "clean-css": "^4.2.1",
     "concat-file-array-cli": "0.0.2",
     "csscomb": "^3.1.8",
     "npm-run-all": "^3.1.2",
